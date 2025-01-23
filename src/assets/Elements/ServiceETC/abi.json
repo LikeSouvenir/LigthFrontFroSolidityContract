@@ -1,0 +1,428 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract Pool",
+				"name": "pool",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "_coin",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "addLiquidity",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "coin",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "_a",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "_b",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_poolOwner",
+				"type": "address"
+			}
+		],
+		"name": "createPool",
+		"outputs": [
+			{
+				"internalType": "contract Pool",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "_fromCoin",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "_toCoin",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "deepSwap",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBonus",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "RW",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getCoinInfo",
+		"outputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract Pool",
+				"name": "_pool",
+				"type": "address"
+			}
+		],
+		"name": "getInfo",
+		"outputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "firstCoin",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "secondCoin",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "poolOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "LPCoin",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getInfoRouting",
+		"outputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "_Gerda",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "_Krendel",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "_Rtk",
+				"type": "address"
+			},
+			{
+				"internalType": "contract Pool",
+				"name": "_GK",
+				"type": "address"
+			},
+			{
+				"internalType": "contract Pool",
+				"name": "_KR",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getPoolInfo",
+		"outputs": [
+			{
+				"internalType": "contract Pool",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "contract Pool",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "coin",
+				"type": "address"
+			}
+		],
+		"name": "getPrice",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getRoutingInfo",
+		"outputs": [
+			{
+				"internalType": "contract Routing",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getStackingInfo",
+		"outputs": [
+			{
+				"internalType": "contract Stacking",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "coin",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_account",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "mint",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "coin",
+				"type": "address"
+			}
+		],
+		"name": "name",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "putOnStack",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract Pool",
+				"name": "pool",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"internalType": "contract BaseCoin",
+				"name": "_coin",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "swap",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "backValue",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "coin",
+				"type": "address"
+			}
+		],
+		"name": "symbol",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract BaseCoin",
+				"name": "coin",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "transfer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
